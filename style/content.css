@@ -1,0 +1,538 @@
+/* index */
+.front-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.front-title{
+    font-family: Georgia;
+    font-size: 1rem;
+    color: black;
+    padding: 0.1rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    margin-bottom: 3rem;
+
+}
+.front-display{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.front-picture{
+    width: 50%;
+    margin-left: 0;
+    margin-right: 2rem;
+    border-radius: 8px;
+    box-shadow: -20px 20px 10px gray;
+
+}
+.front-description p{
+    font-size: 14px;
+    margin-left: 2rem;
+    width: 300px;
+    text-align: justify;
+}
+.front-display-second{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.front-picture-second{
+    width: 50%;
+    margin-right: 0;
+    margin-right: 2rem;
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px gray;
+    object-fit: cover;
+}
+.front-description-second p{
+    font-size: 14px;
+    margin-right: 4rem;
+    width: 300px;
+    text-align: justify;
+}
+
+/* About Us */
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.aboutus-info{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.us-picture{
+    width: 35%;
+    margin-left: 0;
+    margin-right: 2rem;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: -20px 20px 10px gray;
+    margin: 2rem;
+}
+.about-description h3{
+    flex: 1;
+    font-size: 24px;
+    font-family: georgia;
+    margin-bottom: 8px;
+}
+.about-description p{
+    width: 95%;
+    text-align: justify;
+}
+.us-vmo{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.mission{
+    width: 50%;
+    margin: 4rem;
+}
+.mission h3{
+    flex: 1;
+    font-size: 24px;
+    font-family: georgia;
+    margin-bottom: 8px;
+}
+.mission p{
+    text-align: justify;
+}
+.vission{
+    width: 50%;
+    margin: 4rem;
+}
+.vission h3{
+    flex: 1;
+    font-size: 24px;
+    font-family: georgia;
+    margin-bottom: 8px;
+}
+.vission p{
+    text-align: justify;
+}
+
+.artist-main-container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.artist-header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+.artist-container{
+    width: 100%;
+    margin: 2rem;
+}
+.artist-pic-1 img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor:pointer;
+    filter: gray;
+	user-select: none;
+	transition: .5s;
+    filter: grayscale(1);
+}
+.artist-pic-1 img:hover{
+    filter: grayscale(0);
+	transform: scale(1.10);
+}
+
+.artist-name-1 p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.artist-role-1{
+    color: lightcoral;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+}
+
+
+/* Product */
+.main-product-container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 3rem 2rem;
+}
+
+.main-product-container .product-header{
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: left;
+ }
+
+.main-product-container .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.main-product-container .product-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.main-product-container .product-container .product:hover{
+   outline: .2rem solid black;
+   outline-offset: 0;
+}
+
+.main-product-container .product-container .product img{
+    height: 15rem;
+    border-radius: 8px;
+}
+
+.main-product-container .product-container .product img:hover{
+    transform: scale(.9);
+}
+
+.main-product-container .product-container .product h3{
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#444;
+}
+.main-product-container .product-container .product:hover h3{
+    color: lightcoral;
+}
+
+.main-product-container .product-container .product .price{
+   font-size: 1rem;
+   color:#444;
+}
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 30rem;
+}
+
+.products-preview .preview.active{
+    display: inline-block;
+}
+.products-preview .preview img{
+    height: 15rem;
+    border-style: solid;
+    background-color: black;
+}
+.products-preview .preview h3{
+    color: #444;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.products-preview .preview p{
+    line-height: 1;
+    padding:10px 0;
+    font-size: 1rem;
+    color:#777;
+ }
+
+ .products-preview .preview .price{
+    padding:1rem 0;
+    font-size: 1rem;
+    color: lightcoral;
+ }
+
+ .products-preview .preview .buttons{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+ }
+
+ .products-preview .preview .buttons a{
+    flex:1 1 10rem;
+    padding:1rem;
+    font-size: 1.2rem;
+    color:#444;
+    border:.1rem solid #444;
+ }
+
+ .products-preview .preview .buttons a.visit:hover{
+    background: #444;
+    color:#fff;
+ }
+
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 2rem;
+ }
+ 
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+
+ /* Message Us */
+ .main-contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 2rem;
+    margin: 2rem;
+ }
+ .contact-us-header{
+    font-size: 1.5rem;
+    font-family: nunito;
+    text-align: left;
+    margin: 3rem;
+    margin-left: 5rem
+ }
+ .main-contact-us{
+    display: flex;
+    flex-direction: row;
+ }
+ .contact-form input{
+    display: flex;
+    flex-direction: column;
+ }
+ .message-form{
+    display: flex;
+    flex-direction: column;
+ }
+ .btn_sub-1{
+    width: 90px;
+    margin: 1rem;
+    font-size: 18px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    transition: 0.18s;
+    cursor: pointer;
+ }
+ .btn_sub-1:hover{
+    color: black;
+    background-color: lightcoral;
+    border-color: lightcoral;
+ }
+ .btn_sub-1:active{
+    opacity: 0.4;
+ }
+ .btn_sub-2{
+    display: none;
+    width: 90px;
+    margin: 1rem;
+    font-size: 18px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    transition: 0.18s;
+    cursor: pointer;
+ }
+ .btn_sub-2:hover{
+    color: black;
+    background-color: lightcoral;
+    border-color: lightcoral;
+ }
+ .btn_sub-2:active{
+    opacity: 0.4;
+ }
+ #name{
+    width: 80%;
+    margin: 1rem;
+    margin-right: 10rem;
+    font-size: 20px;
+ }
+ #email{
+    width: 80%;
+    margin: 1rem;
+    margin-right: 10rem;
+    font-size: 20px;
+ }
+ #phone{
+    width: 80%;
+    margin: 1rem;
+    margin-right: 10rem;
+    font-size: 20px;
+ }
+ #message{
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    font-size: 20px;
+    margin-left: 10px;
+ }
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .front-display{
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 2rem;
+    }
+    .front-title h2{
+        font-size: 25px;
+    }
+    .front-picture{
+        width: 85%;
+        box-shadow: 0 0 0;
+        margin-left: 2rem;
+    }
+    .front-description{
+        margin-top: 10px;
+        padding-left: 0;
+        padding-right: 28px;
+
+    }
+    .front-display-second{
+        display: flex;
+        flex-flow: column;
+        flex-flow: column-reverse;
+        margin: 0 auto;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .front-picture-second{
+        width: 85%;
+        box-shadow: 0 0 0;
+    }
+    .front-description-second{
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+    .aboutus-info{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .us-picture{
+        width: 80%;
+        box-shadow: 0 0 0;
+        border: 4px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 16px;
+    }
+    .about-description h3{
+        width: 80%;
+        text-align: center;
+        margin-left: 2rem;
+    }
+    .about-description p{
+        width: 80%;
+        margin: 2rem;
+    }
+    .us-vmo{
+        display: flex;
+        flex-flow: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .mission{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .vission{
+        width: 90%;
+        margin-top: 0;
+    }
+    .main-product-container .product-header{
+        align-items: center;
+    }
+    .main-contact-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn_sub-1{
+        display: none;
+    }
+    .btn_sub-2{
+        display: block;
+    }
+    #message{
+        width: 80%;
+        height:100px;
+    }
+    .message-form{
+        justify-content: center;
+    }
+    .contact-us-header{
+        margin-left: 3rem;
+    }
+    .artist-main-container{
+        height: 70%;
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .artist-container{
+        align-items: center;
+        justify-content: content;
+    }
+    .artist-header{
+        margin: 0 auto;
+    }
+
+}
